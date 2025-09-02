@@ -12,7 +12,7 @@ Learnify is an AI-driven learning platform designed to enhance the educational e
 
 ## 🎬 Demo
 
-🔗 **Live Demo**: [AI LMS - SalamHack](https://ai-lms-salamhack.vercel.app/)
+🔗 **Live Demo**: [Learnify - AI LMS](https://ai-interview-mocker-nine-black.vercel.app/)
 
 ## 🛠️ Getting Started
 
@@ -29,26 +29,3 @@ npx inngest-cli@latest dev
 
 # Start Next.js development server
 npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the application running.
-
-## 📚 Learn More
-
-- [Next.js Documentation](https://nextjs.org/docs) - Explore Next.js features.
-- [Inngest Documentation](https://www.inngest.com/docs) - Learn about serverless functions.
-- [Tailwind CSS](https://tailwindcss.com/docs) - Styling framework for modern UI.
-
-## 🚀 Deployment
-
-Deploy easily on **Vercel**:
-
-[Deploy on Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
-
-## 🤝 Contributing
-
-We welcome contributions! Feel free to submit issues and pull requests to improve Learnify.
-
----
-
-🚀 **Created for Salam Hackathon by Team AI Pioneers**
