@@ -7,11 +7,17 @@ const {
 } = require('@google/generative-ai');
 
 const apiKey = process.env.GEMINI_API_KEY;
-if (!apiKey) {
+if (!apiKey && process.env.NODE_ENV !== 'production') {
   throw new Error('GEMINI_API_KEY is not set. Add it to Vercel Dashboard (Settings > Environment Variables) or .env.local.');
 }
 
-const genAI = new GoogleGenerativeAI(apiKey);
+let genAI;
+try {
+  genAI = new GoogleGenerativeAI(apiKey);
+} catch (err) {
+  console.error('Failed to initialize GoogleGenerativeAI:', err.message);
+  throw new Error('Invalid GEMINI_API_KEY or initialization error');
+}
 
 const model = genAI.getGenerativeModel({
   model: 'gemini-1.5-flash',
